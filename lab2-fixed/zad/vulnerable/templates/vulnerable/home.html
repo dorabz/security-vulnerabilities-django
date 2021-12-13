@@ -1,0 +1,27 @@
+{% extends "vulnerable/base.html" %}
+{% block content %}
+<div class="container p-5 my-5 border">
+
+  <h3 align="center"> <img src="https://www.pngall.com/wp-content/uploads/5/Vector-Santa-Claus-PNG-Clipart.png" 
+  alt="Santa!" width="300" 
+  height="300" align="center"/></h3>
+    <h2 align="center"> Dobrodošli na sigurnu stranicu! </h2>
+    <h3 align="center"> Gornji lijevi kutak prikazivati će "Secure" dok god se nalazite na sigurnoj stranici</h3>
+    <h4 align="center"> Kratke upute za korištenje </h4>
+
+    <p class="bp">
+        <p class="bp">
+          Na ovoj stranici nema ranjivosti. 
+          Kako bi se uvjerili da ranjivosti više nema, u gornjem izborniku izaberite željenu demonstraciju otklonjene ranjivosti.
+        </hr>
+        <br>Ako se želite vraititi ranjivoj stranici gdje postoje ranjivosti pristinite gumb "Vulnerable site"
+        <br>
+        <button class="btn btn-danger" type="button" onclick="location.href='https://site-with-vulnerabilities.herokuapp.com/'">Vulnerable site</button>
+      </p>
+      </p>
+
+    
+</div>
+
+
+{% endblock content %}

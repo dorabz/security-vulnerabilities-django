@@ -1,0 +1,23 @@
+{% extends 'vulnerable/base.html' %}
+{% block content %}
+{% block title %}
+<title>Sensitive Data Exposure</title>
+{% endblock  %}
+
+<div class="container p-5 my-3 border">
+    <div class="container">
+    
+        <br><br><b>Koraci za provjeru da je ranjivost otklonjena</b>
+        <ul>
+        <li>Izazvati pogrešku odabirom putanje koja ne postoji, npr. https://site-with-vulnerabilities1.herokuapp.com/data_exp_lab/admin</li>
+        <li>Primjetiti da je prikazan samo mistificirani error s kojim dalje ne možemo ništa</li>
+        <li>Stranica više nema ranjivost. Osjetljivi podaci nisu dostupni napadaču.</li>
+       </ul>
+    
+       
+    </div>
+    </div>
+
+
+{% endblock %}
+

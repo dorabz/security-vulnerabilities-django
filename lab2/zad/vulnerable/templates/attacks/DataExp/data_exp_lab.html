@@ -1,0 +1,22 @@
+{% extends "vulnerable/base.html" %}
+{% block content %}
+{% block title %}
+<title>Sensitive Data Exposure</title>
+{% endblock  %}
+
+<div class="container p-5 my-3 border">
+<div class="container">
+
+    <br><br><b>Koraci za prikazivanje ranjivosti</b>
+    <ul>
+    <li>Izazvati pogrešku odabirom putanje koja ne postoji, npr. https://site-with-vulnerabilities.herokuapp.com/data_exp_lab/admin</li>
+    <li>U navedenom ispisu errora pronaći 404 error url i otići na njega, npr. https://site-with-vulnerabilities.herokuapp.com/404error </li>
+    <li>Primjetiti da nam je vidljiva cijela konfiguracijska datoteka sa osjetljivim podacima</li>
+    <li>*Ekstra: pronaći u konfiguracijskoj datoteci flag u varijabli GRINCH_MESSAGE i pročitati poruku od Grincha</li>
+   </ul>
+</div>
+</div>
+
+
+{% endblock %}
+

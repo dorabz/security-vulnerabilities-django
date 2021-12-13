@@ -1,0 +1,49 @@
+{% extends 'vulnerable/base.html' %}
+{% block content %}
+{% block title %}
+<title>Broken Access Control</title>
+{% endblock %}
+<div class="container p-5 my-3 border">
+<div class="content">
+    <h3>Broken Access Control</h3>
+    <div class="box">
+
+        <div class="lab">
+              <p class="bp">
+                  <p class="bp">
+                    Broken Access Control javlja se kada korisnici djeluju izvan predviđenih dopuštenja.
+                    U ovom primjeru, korisnik djeluje kao administrator kada je prijavljen kao običan korisnik. 
+                    Navedeno je postignuto manipulacijom nad kolačićem za pristup.
+                    <br>Odabirom gumba, nalazimo se na stranici koja ima login formu za prijavu običnog korisnika. <br>
+                    <br>Obični korisnik korišten za demonstraciju dolazi sa sljedećim podacima:<br>
+                     <b><i>username:password == grinch:ihatechristmas</i></b>
+          
+                    
+
+                    <br><br><b>Koraci za testiranje otklonjene ranjivosti</b>
+                    <ul>
+                    <li>Prijaviti se kao korisnik grinch na ranjivoj stranici i nakon uspješne prijave 
+                    vidjeti u rubrici Message poruku: Welcome Grinch!</li>
+                   <li>Korištenjem Developer Tools u vašem pregledniku (Application -> Cookies ili Storage -> Cookies) ili BurpSuitom
+                    vidjeti da ne možemo presresti zahtjev za kolačić i promijeniti vrijednost admin polja, a i da ga promijenimo neće nam dati admin privilegije
+                  </li>
+                  <li>Ponovno se prijaviti kao korisnik grinch i vidjeti da se nismo uspjeli ulogirati kao admin, i da je ranjivost uklonjena jer se ne vidi tajna poruka.</li>
+                  <li>*Ekstra: Ako se želimo uvjeriti da admin može dobiti tajnu poruku ulogirajmo se sa podacima: username:password == admin:secretmessage
+                  </li>
+                   </ul>
+                </p>
+                </p>
+
+              <br>
+                <div> 
+                 <button class="btn btn-success" type="button" onclick="window.location.href='/ba_lab'">Safe site</button>
+                 <!--<button class="btn btn-danger" type="button" onclick="location.href='https://site-with-vulnerabilities.herokuapp.com/ba-lab'">Site with vulnerability</button>-->
+                </div>
+              </p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}

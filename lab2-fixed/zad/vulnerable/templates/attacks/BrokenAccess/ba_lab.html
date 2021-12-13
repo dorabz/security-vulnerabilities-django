@@ -1,0 +1,33 @@
+{% extends "vulnerable/base.html" %}
+{% load static %}
+{% block content %}
+{% block title %}
+<title>Broken Access Control.</title>
+{% endblock  %}
+<div class="container p-5 my-3 border">
+
+    
+    <div class="login p-5 my-3 border" align="center">
+        <form method="post" action="/ba_lab">
+
+            <input class="form-control" id="input" type="text" name="name" placeholder="Username"><br>
+            <input class="form-control" id="input" type="password" name="pass" placeholder="Password"><br>
+            <button  style="margin-top:20px" class="btn btn-success" type="submit"> Log in</button>
+
+
+        </form>
+    </div>
+
+<div class="container p-5 my-3 border">
+    <h4 style="text-align:left"> Message</h4>
+    {% if data %}
+           <h5 style="text-align:center">{{data}}</h5>
+    {% endif %}
+
+</div>
+</div>
+
+
+
+
+{% endblock %}

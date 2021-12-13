@@ -1,0 +1,21 @@
+{% extends "vulnerable/base.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="container p-5 my-3 border">
+    <h1 align="center"> Login </h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+        <button type="submit" class="btn btn-success" align="center">Login</button>
+    </form>
+    <hr>
+    <h6>You can use already created user username:password == safe_santa:ilovechristmaspresents3</h6>
+</div>
+
+<div class="container p-3 my-3 border" align="center">
+<p class="bp"> Don't have an account? You can register here -
+    <a href="/register" align="center" class="btn btn-warning">Register</a>
+</p>
+</div>
+{% endblock %}

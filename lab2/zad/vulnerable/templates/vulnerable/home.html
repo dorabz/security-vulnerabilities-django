@@ -1,0 +1,38 @@
+{% extends "vulnerable/base.html" %}
+{% block content %}
+<div class="container p-5 my-5 border">
+
+  <h3 align="center"> <img src="https://static.wikia.nocookie.net/seuss/images/c/c4/The_grinch_red.jpg/revision/latest?cb=20191220194550" 
+  alt="Grinch!" width="300" 
+  height="300" align="center"/></h3>
+  <h2 align="center"> Uspješno ste ulogirani na stranicu s ranjivostima! </h2>
+  <h3 align="center"> Gornji lijevi kutak prikazivati će "Vulnerable" dok god se nalazite na stranici s ranjivostima</h3>
+    <h4 align="center"> Kratke upute za korištenje </h4>
+
+    <p class="bp">
+        <p class="bp">
+          Na ovoj stranici nalaze se implementirane ranjivosti. Preporučeno je prvo proći sve ranjivosti, a onda pristupiti sigurnoj stranici.
+          Implementiranim ranjivostima može se pristupiti iz gornjeg izbornika odabirom na željenu demonstraciju ranjivosti.
+          Svaka ranjivost sastoji se od kratkih uputa i dva linka u obliku gumba: crveni - demonstracija stranice
+          s ranjivosti, te zeleni - demonstracija stranice bez ranjivosti.
+        </hr>
+          <br>Ako želite pristupiti sigurnoj stranici gdje su ranjivosti otklonjene, prilikom prvog pristupa morat ćete
+          stvoriti NOVI korisnički račun koji će biti korišten na cijeloj sigurnoj stranici ili koristiti unaprijed stvoren safe_santa.
+          <br>
+
+      
+        <button class="btn btn-success" type="button" onclick="location.href='https://site-with-vulnerabilities1.herokuapp.com/'">Safe site</button>
+
+      </p>
+      </p>
+
+    <h5 align="left"> Implementirane ranjivosti: </h5>
+    <ul align="left">
+        <li>Broken Acces Control</li>
+        <li>Sensitive Data Exposure</li>
+       </ul>
+    
+</div>
+
+
+{% endblock content %}

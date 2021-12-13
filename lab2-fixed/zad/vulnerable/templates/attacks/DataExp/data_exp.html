@@ -1,0 +1,30 @@
+{% extends 'vulnerable/base.html' %}
+{% block content %}
+{% block title %}
+<title>Sensitive Data Exposure</title>
+{% endblock %}
+<div class="container p-5 my-3 border">
+<div class="content">
+    <h3>Sensitive Data Exposure</h3>
+    <div class="box">
+
+        <div class="lab">
+              <p class="bp">
+                  <p class="bp">
+                    Sensitive Data Exposure je uklonjena nakon što smo u Djangovoj konfiguraciji stavili DEBUG = False.
+                    Kako biste se uvjerili da je ranjivosti uklonjena, pritisnite gumb "Safe site".
+                </p>
+                </p>
+              <br>
+                <div>
+                 <button class="btn btn-success" type="button" onclick="window.location.href='/data_exp_lab'">Safe site</button>
+                  <!--<button class="btn btn-danger" type="button" onclick="location.href='https://site-with-vulnerabilities.herokuapp.com/data_exp_lab'">Vulnerable site</button>-->
+                </div>
+              </p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
