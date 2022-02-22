@@ -1,26 +1,27 @@
-# Napredni-razvoj-programske-potpore-za-web---2.projekt
+# Advanced-web-development---project-2
 
+This is a repo of project made as a part of university course.
 
-url na Heroku: https://site-with-vulnerabilities.herokuapp.com/  , tehnologije: Python Django
+FER - Advanced web development - 2. project
 
-ostvarene ranjivosti: 
-- Nesigurna pohrana osjetljivih podataka (Sensitive Data Exposure)
-- Loša kontrola pristupa (Broken Access Control)
+url on Heroku: https://site-with-vulnerabilities.herokuapp.com/
+technologies: Python Django
 
-upute: 
-(korisničko sučelje je opremljeno uputama)
+implemented vulnerabilities:
 
-Potrebno je registrirati se ili koristiti već napravljen račun: username:password == santa:ilovechristmaspresents3
-Home - upute za pokretanje ranjivosti i stranice koja je sigurna
-Sensitive Data Exposure - upute za simulaciju ove ranjivosti 
-Broken Access Control - upute za simulaciju ove ranjivosti 
-logout - odjava sa prijavljenog računa
+Sensitive Data Exposure
+Broken Access Control
 
-*za lokalno pokretanje potrebno je imati instaliran pip i aktivirati virtualno okruženje , nakon tog 
-pip install -r requirements.txt
-python3 manage.py migrate
-python3 manage.py runserver
+instructions: (user interface is equipped with instructions)
 
--> app dostupna na http://127.0.0.1:8000
+It is necessary to register or use an already created account: username: password == santa: ilovechristmaspresents3 
+Home page - instructions for running the vulnerability and a secure page 
+Sensitive Data Exposure page - instructions for simulating this vulnerability 
+Broken Access Control page - instructions for simulating this vulnerability 
+Logout option - logout from the registered account
 
-napomena: zad je ranjiva stranica, zad-fix je sigurna stranica
+* for local startup it is necessary to have pip installed and activate virtual environment, after that pip install -r requirements.txt python3 manage.py migrate python3 manage.py runserver
+
+-> app available at http://127.0.0.1:8000
+
+note: zad is a vulnerable site, zad-fix is a secure site
