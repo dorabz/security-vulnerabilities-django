@@ -4,6 +4,8 @@ This is a repo of project made as a part of university course.
 
 FER - Advanced web development - 2. project
 
+Theme of project: Security vulnerabilities
+
 url on Heroku: https://site-with-vulnerabilities.herokuapp.com/
 
 technologies: Python Django
