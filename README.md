@@ -1,8 +1,6 @@
-# Advanced-web-development---project-2
+# Security vulnerabilities in web aplications
 
 This is a repo of project made as a part of university course.
-
-FER - Advanced web development - 2. project
 
 Theme of project: Security vulnerabilities
 
